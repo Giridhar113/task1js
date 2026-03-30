@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strings</title>
+</head>
+<body>
+<script>
+
+console.log("----Basic Operations on JavaScript Strings----");
+
+// 1. Finding the length of a String
+console.log("1. Finding the length of a String");
+let message = "Welcome to India";
+console.log(message.length);
+
+// 2. String Concatenation
+console.log("2. String Concatenation");
+let firstName = "Giridhar";
+let middleName = "Reddy";
+let lastName = "Parlapalli";
+console.log(firstName + " " + middleName + " " + lastName);
+console.log(`${firstName} ${middleName} ${lastName}`);
+
+// 3. Escape Characters
+console.log("3. Escape Characters");
+let quote = 'He said, "Giridhar is awesome!"';
+let multiLine = "Line one\nLine two";
+console.log(quote);
+console.log(multiLine);
+
+// 4. Breaking Long Strings
+console.log("4. Breaking Long Strings");
+let longStr = "This is a very long string that " + "we broken into two lines.";
+let longStr1 = "This is also a long string.";
+console.log(longStr);
+console.log(longStr1);
+
+// 5. Find Substring of a String
+console.log("5. Find Substring of a String");
+let text = "Apple, Banana, Kiwi";
+console.log(text.slice(7, 13));
+console.log(text.substring(4, 9));
+
+// 6. Convert to Uppercase and Lowercase
+console.log("6. Convert to Uppercase and Lowercase");
+let shout = "hello";
+let STOP = "Giridhar";
+console.log(shout.toUpperCase());
+console.log(STOP.toLowerCase());
+
+// 7. String Search
+console.log("7. String Search");
+let str = "I just bought my tablet with my own money.";
+console.log(str.indexOf("tablet"));
+console.log(str.includes("no"));
+
+// 8. String Replace
+console.log("8. String Replace");
+let wish = "I like apples and apples";
+console.log(wish);
+console.log(wish.replace("apples", "oranges"));
+console.log(wish.replaceAll("apples", "oranges"));
+
+// 9. Trimming Whitespace
+console.log("9. Trimming Whitespace");
+let messy = "   Too many spaces   ";
+console.log(messy.trim());
+
+// 10. Accessing Characters
+console.log("10. Accessing Characters");
+let word = "Parlapalli";
+console.log(word[0]);
+console.log(word.charAt(4));
+
+// 11. String Comparison
+console.log("11. String Comparison");
+console.log("a" < "b");
+console.log("Z" < "a");
+console.log("hi" === "hi");
+
+// 12. Strings as Objects
+console.log("12. Strings as Objects");
+let x = "Giridhar";
+let y = new String("Reddy");
+console.log(typeof x);
+console.log(typeof y);
+console.log(x == y);
+console.log(x === y);
+
+console.log("----JavaScript String Methods----");
+
+// 1. slice()
+console.log("1. slice()");
+let s1 = "Hello World";
+console.log(s1.slice(0, 5));
+
+// 2. substring()
+console.log("2. substring()");
+let s2 = "Hello World";
+console.log(s2.substring(0, 5));
+
+// 3. substr()
+console.log("3. substr()");
+let s3 = "Hello World";
+console.log(s3.substr(6, 5));
+
+// 4. replace()
+console.log("4. replace()");
+let s4 = "I like apples";
+console.log(s4.replace("apples", "mangoes"));
+
+// 5. replaceAll()
+console.log("5. replaceAll()");
+let s5 = "apples apples apples";
+console.log(s5.replaceAll("apples", "mangoes"));
+
+// 6. toUpperCase()
+console.log("6. toUpperCase()");
+let s6 = "hello";
+console.log(s6.toUpperCase());
+
+// 7. toLowerCase()
+console.log("7. toLowerCase()");
+let s7 = "HELLO";
+console.log(s7.toLowerCase());
+
+// 8. concat()
+console.log("8. concat()");
+let a = "Hello";
+let b = "World";
+console.log(a.concat(" ", b));
+
+// 9. trim()
+console.log("9. trim()");
+let s9 = "   Hello   ";
+console.log(s9.trim());
+
+// 10. trimStart()
+console.log("10. trimStart()");
+let s10 = "   Hello";
+console.log(s10.trimStart());
+
+// 11. trimEnd()
+console.log("11. trimEnd()");
+let s11 = "Hello   ";
+console.log(s11.trimEnd());
+
+// 12. padStart()
+console.log("12. padStart()");
+let num1 = "5";
+console.log(num1.padStart(3, "0"));
+
+// 13. padEnd()
+console.log("13. padEnd()");
+let num2 = "5";
+console.log(num2.padEnd(3, "0"));
+
+// 14. charAt()
+console.log("14. charAt()");
+let s14 = "Hello";
+console.log(s14.charAt(1));
+
+// 15. split()
+console.log("15. split()");
+let s15 = "apple,banana,orange";
+console.log(s15.split(","));
+
+</script>
+</body>
+</html>
